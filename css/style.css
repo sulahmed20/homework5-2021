@@ -60,14 +60,19 @@ nav a{
   color: black;
   font-weight: bold;
   /* Requirement 1 code here*/
+  text-decoration: none;
 }
 
+nav a:hover{
   /* Requirement 2 code here*/
+  text-decoration-line: underline;
+}
+  
 
 
 
 .skip a{
-  background: white;
+  background: #ffffff;
   left: 0;
   padding: 6px;
   -webkit-transition: top 1s ease-out;
@@ -75,14 +80,23 @@ nav a{
   z-index: 1;
 
   /* Requirement 3a code here*/
-  
+  position: absolute;
+  top: -40px;
 }
 
 /* Requirement 3b code here*/
+.skip a:focus{
+  top: 0px;
+}
 
 
 /* Requirement 4 code here*/
-
+*:focus{
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
 
 
 .container{
