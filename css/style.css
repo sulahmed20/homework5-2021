@@ -101,12 +101,20 @@ nav a:hover{
 
 .container{
   /* Requirement 5 code here*/
-
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 15px;
 }
 
 /* Remainder of requirements here: */
 
 header{
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+  background-image: url('../images/header.jpg');
+  background-repeat: no-repeat;
+
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
   background-size: cover; /* Parallax effect */
@@ -114,6 +122,7 @@ header{
   height: 400px; /* Parallax effect */
 
   /* YOUR CODE HERE; */
+
 }
 
 
