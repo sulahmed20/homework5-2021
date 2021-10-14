@@ -110,11 +110,6 @@ nav a:hover{
 /* Remainder of requirements here: */
 
 header{
-  grid-column: 1 / -1;
-  grid-row: 1 / 1;
-  background-image: url('../images/header.jpg');
-  background-repeat: no-repeat;
-
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
   background-size: cover; /* Parallax effect */
@@ -122,29 +117,63 @@ header{
   height: 400px; /* Parallax effect */
 
   /* YOUR CODE HERE; */
-
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+  background-image: url('../images/header.jpg');
+  background-repeat: no-repeat;
 }
 
 
 
 .about-image{
-  
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+  grid-row: 2 / 3;
 }
 
 .about{
- 
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 .method-image{
- 
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+  grid-row: 3 / 4;
 }
 
 .method{
-  
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
 
 /* You need to write some of your own selectors here */
 
+.clients-image{
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+  grid-row: 4 / 5;
+}
+
+.clients{
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.contact-image{
+  grid-column: 1 / -1;
+  max-height: 700px;
+  overflow: hidden;
+  grid-row: 5 / 6;
+}
+
+.contact{
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+}
 
 
 .text-block{
@@ -153,7 +182,6 @@ header{
   padding: 30px;
 
   /* Your code here */
-
 }
 
 @media screen and (min-width: 800px){
